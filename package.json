@@ -61,7 +61,8 @@
     "test:size": "size-limit",
     "test": "FORCE_COLOR=1 pnpm run /^test:/",
     "unit": "uvu -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\"",
-    "old": "uvu -r ../../../../../../../test/old-node.js -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\""
+    "old": "uvu -r ../../../../../../../test/old-node.js -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\"",
+    "build": "./build.sh"
   },
   "funding": [
     {
@@ -97,6 +98,7 @@
     "check-dts": "^0.8.2",
     "clean-publish": "^5.1.0",
     "concat-with-sourcemaps": "^1.1.0",
+    "esbuild": "^0.24.0",
     "eslint": "^9.14.0",
     "nanodelay": "^1.0.8",
     "nanospy": "^1.0.0",

@@ -29,10 +29,10 @@ updateVersion
 build || exit 2
 
 git status | grep 'nothing to commit'
-if [ $? -eq 1 ]; then
-    git add -A && git commit -m "dump release files"
-fi
-git push
+# if [ $? -eq 1 ]; then
+#     git add -A && git commit -m "dump release files"
+# fi
+# git push
 
 pushd dist/
 # npm config set scope @eklesia

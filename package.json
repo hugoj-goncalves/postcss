@@ -119,6 +119,9 @@
     "reporter": "lcov",
     "check-coverage": true
   },
+  "simple-git-hooks": {
+    "pre-commit": "./test/version.js"
+  },
   "prettier": {
     "arrowParens": "avoid",
     "jsxSingleQuote": false,

@@ -10,6 +10,7 @@ function updateVersion {
     npm version "$newVersion"
     newVersionValue=$(cat package.json | grep version | grep -oP "\d+[^\"]+")
     echo "New version value: $newVersionValue - from $oldVersionValue"
+    sed -i.bak -r "s/this\.version\s*=\s*'[^']+'/this.version = '$newVersionValue'/" ./lib/processor.js
 }
 
 newVersion="$1"

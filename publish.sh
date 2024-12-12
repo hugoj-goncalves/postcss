@@ -29,13 +29,13 @@ updateVersion
 build || exit 2
 
 git status | grep 'nothing to commit'
-# if [ $? -eq 1 ]; then
-#     git add -A && git commit -m "dump release files"
-# fi
-# git push
+if [ $? -eq 1 ]; then
+    git add -A && git commit -m "dump release files"
+fi
+git push
 
 pushd dist/
-# npm config set scope @eklesia
-# npm config set access public
-# npm publish
+npm config set scope @eklesia
+npm config set access public
+npm publish --registry http://npm-registry.eklesiaonline.com.br:4873
 popd

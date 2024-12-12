@@ -1,6 +1,6 @@
 {
   "name": "postcss",
-  "version": "8.4.49-eklesia.6",
+  "version": "8.4.49-eklesia.7",
   "description": "Tool for transforming styles with JS plugins",
   "engines": {
     "node": "^10 || ^12 || >=14"

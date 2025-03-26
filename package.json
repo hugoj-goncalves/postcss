@@ -1,5 +1,5 @@
 {
-  "name": "postcss",
+  "name": "@eklesia/postcss",
   "version": "8.4.49-eklesia.7",
   "description": "Tool for transforming styles with JS plugins",
   "engines": {

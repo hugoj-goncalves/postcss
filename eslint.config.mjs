@@ -1,7 +1,7 @@
 import loguxTsConfig from '@logux/eslint-config/ts'
 
 export default [
-  { ignores: ['docs/api/assets/', '**/errors.ts'] },
+  { ignores: ['docs/api/assets/', 'dist/*', '**/errors.ts'] },
   ...loguxTsConfig,
   {
     rules: {

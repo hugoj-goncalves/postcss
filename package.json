@@ -1,6 +1,6 @@
 {
-  "name": "postcss",
-  "version": "8.4.49",
+  "name": "@eklesia/postcss",
+  "version": "8.4.49-eklesia.8",
   "description": "Tool for transforming styles with JS plugins",
   "engines": {
     "node": "^10 || ^12 || >=14"
@@ -61,7 +61,8 @@
     "test:size": "size-limit",
     "test": "FORCE_COLOR=1 pnpm run /^test:/",
     "unit": "uvu -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\"",
-    "old": "uvu -r ../../../../../../../test/old-node.js -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\""
+    "old": "uvu -r ../../../../../../../test/old-node.js -r ts-node/register/transpile-only test \"\\.test\\.(ts|js)$\"",
+    "build": "./build.sh"
   },
   "funding": [
     {
@@ -97,11 +98,11 @@
     "check-dts": "^0.8.2",
     "clean-publish": "^5.1.0",
     "concat-with-sourcemaps": "^1.1.0",
+    "esbuild": "^0.24.0",
     "eslint": "^9.14.0",
     "nanodelay": "^1.0.8",
     "nanospy": "^1.0.0",
     "postcss-parser-tests": "^8.8.0",
-    "simple-git-hooks": "^2.11.1",
     "size-limit": "^11.1.6",
     "strip-ansi": "^6.0.1",
     "ts-node": "^10.9.2",
@@ -116,9 +117,6 @@
     "lines": 100,
     "reporter": "lcov",
     "check-coverage": true
-  },
-  "simple-git-hooks": {
-    "pre-commit": "./test/version.js"
   },
   "prettier": {
     "arrowParens": "avoid",
